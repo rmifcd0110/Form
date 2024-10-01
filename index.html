@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Validación</title>
+<meta name="viewport" content="width=device-width,inicial-scale=1.0">
+<link rel="stylesheet" href="css/estilo.css"/>
+<script src="js/regExp.js"></script>
+</head>
+
+<body>
+	<div id="divFormulario">
+		<form>
+			<fieldset>
+				<legend>Formulario</legend>
+				<div id="divNombre">
+					<label for="nombre">Nombre:</label><br/>
+					<input autofocus type="text" id="txtNombre" name="nombre" placeholder="Nombre (2-100)">
+				</div>
+				<div id="divTlfF">
+					<label for="telefonoFijo">Teléfono fijo:</label><br/>
+					<input type="text" id="txtTelefonoFijo" name="telefonoFijo" placeholder="Teléfono fijo">
+				</div>
+				<div id="divTlfM">
+					<label for="telefonoMovil">Teléfono móvil:</label><br/>
+					<input type="text" id="txtTelefonoMovil" name="telefonoMovil" placeholder="Teléfono móvil">
+				</div>
+				
+			<input type="button" id="butValidar" value="Esto es un botón">
+			</fieldset>
+		</form>
+	</div>
+	<div id="divValidar" class="divValidar">
+		<div id="divValNombre">Nombre:</div>
+		<div id="divValTlfF">Teléfono fijo:</div>
+		<div id="divValTlfM">Teléfono móvil:</div>
+	</div>
+</body>
+<script src="js/viewFormulario.js"></script>
+</html>
